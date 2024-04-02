@@ -1,0 +1,46 @@
+===============================================================================
+Script de Surveillance d'Espace Disque - Notice
+===============================================================================
+
+Description :
+Ce script permet de surveiller l'espace disque utilisé sur un point de montage
+spécifié. Il affiche des avertissements ou des alertes critiques en fonction
+des seuils spécifiés pour l'espace disque utilisé.
+
+Utilisation :
+./script.sh <point_de_montage> <seuil_avertissement> <seuil_critique>
+
+Arguments :
+- <point_de_montage> : Le chemin du point de montage à surveiller.
+- <seuil_avertissement> : Le seuil (en pourcentage) pour l'avertissement.
+- <seuil_critique> : Le seuil (en pourcentage) pour l'alerte critique.
+
+Exemple d'utilisation :
+./script.sh /mnt/data 80 90
+
+Fonctionnalités :
+- Affiche l'aide sur la manière d'utiliser le script si le nombre d'arguments
+  est incorrect ou si l'utilisateur demande explicitement de l'aide.
+- Vérifie si le point de montage spécifié existe.
+- Surveille l'espace disque utilisé sur le point de montage.
+- Compare l'espace disque utilisé aux seuils spécifiés.
+- Affiche un message indiquant l'état de l'espace disque et quitte avec un code
+  de sortie approprié pour intégration avec des systèmes de surveillance comme
+  Nagios.
+
+Codes de Sortie :
+- 0 : OK - L'espace disque utilisé est en dessous du seuil d'avertissement.
+- 1 : WARNING - L'espace disque utilisé est au-dessus du seuil d'avertissement.
+- 2 : CRITICAL - L'espace disque utilisé est au-dessus du seuil critique.
+- 3 : Erreur - Le point de montage spécifié n'existe pas.
+
+Remarques :
+- Assurez-vous d'exécuter ce script avec les permissions nécessaires pour
+  accéder aux informations sur l'espace disque.
+- Ce script est conçu pour être utilisé dans un environnement compatible avec
+  le shell Bash.
+- Ce script peut être intégré à des systèmes de surveillance comme Nagios pour
+  surveiller l'espace disque sur des serveurs.
+- Pour obtenir de l'aide sur l'utilisation du script, exécutez-le sans aucun
+  argument ou avec l'option -h ou --help.
+
