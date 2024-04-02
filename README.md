@@ -1,8 +1,6 @@
 # Check-Disk-Size-Nagios-PLugin
 Nagios plugin to check Linux Disk Size
 
-# snmp_install_and_config.bash
-
 # check_disk_size.bash
 
 ## Getting Started
