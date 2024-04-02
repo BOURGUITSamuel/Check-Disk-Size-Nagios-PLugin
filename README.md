@@ -5,7 +5,6 @@ Nagios plugin to check Linux Disk Size
 
 ## Getting Started
 
-
 ### Prerequisites
 
 ## Installing & Using
