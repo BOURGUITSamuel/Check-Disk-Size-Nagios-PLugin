@@ -16,8 +16,6 @@ L'utilisation du programme nécessite l'acquisition d'un système d'exploitation
 
 Le programme a été conçu avec le language Bash
 
-L'installation de la commande "bc" est requise
-
 ## Installing & Using
 
 1- Copiez le programme dans le répertoire de votre choix ou dans le dossier "plugins" de Nagios
