@@ -1,5 +1,5 @@
 ===============================================================================
-Script de Surveillance d'Espace Disque - Notice
+Notice d'utilisation - Script check_disk_size.bash
 ===============================================================================
 
 Description :
@@ -8,7 +8,7 @@ spécifié. Il affiche des avertissements ou des alertes critiques en fonction
 des seuils spécifiés pour l'espace disque utilisé.
 
 Utilisation :
-./script.sh <point_de_montage> <seuil_avertissement> <seuil_critique>
+./check_disk_size.bash <point_de_montage> <seuil_avertissement> <seuil_critique>
 
 Arguments :
 - <point_de_montage> : Le chemin du point de montage à surveiller.
@@ -16,11 +16,11 @@ Arguments :
 - <seuil_critique> : Le seuil (en pourcentage) pour l'alerte critique.
 
 Exemple d'utilisation :
-./script.sh /mnt/data 80 90
+./check_disk_size.bash /mnt/data 80 90
 
 Fonctionnalités :
 - Affiche l'aide sur la manière d'utiliser le script si le nombre d'arguments
-  est incorrect ou si l'utilisateur demande explicitement de l'aide.
+  est incorrect.
 - Vérifie si le point de montage spécifié existe.
 - Surveille l'espace disque utilisé sur le point de montage.
 - Compare l'espace disque utilisé aux seuils spécifiés.
@@ -41,6 +41,3 @@ Remarques :
   le shell Bash.
 - Ce script peut être intégré à des systèmes de surveillance comme Nagios pour
   surveiller l'espace disque sur des serveurs.
-- Pour obtenir de l'aide sur l'utilisation du script, exécutez-le sans aucun
-  argument ou avec l'option -h ou --help.
-
