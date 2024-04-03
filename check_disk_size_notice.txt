@@ -41,3 +41,35 @@ Remarques :
   le shell Bash.
 - Ce script peut être intégré à des systèmes de surveillance comme Nagios pour
   surveiller l'espace disque sur des serveurs.
+
+-------------------------------------------------------------------------------
+
+# Configuration de la commande pour exécuter le script de vérification de l'espace disque
+
+define command {
+    command_name    check_disk_space
+    command_line    /chemin_vers_le_script/check_disk_size.bash $ARG1$ $ARG2$ $ARG3$
+}
+
+# Configuration du service pour surveiller l'espace disque utilisé avec Nagios
+
+define service {
+    use                     generic-service
+    host_name               hostname         ; Remplacer "hostname" par le nom de l'hôte où le script est exécuté
+    service_description     Check Disk Space
+    check_command           check_disk_space!$ARG1$!$ARG2$!$ARG3$
+}
+
+# Description des arguments :
+#   - $ARG1$ : Le point de montage que vous souhaitez vérifier.
+#   - $ARG2$ : Le pourcentage d'utilisation de l'espace disque à partir duquel un avertissement sera généré.
+#   - $ARG3$ : Le pourcentage d'utilisation de l'espace disque à partir duquel une alerte critique sera générée.
+
+# Exemple d'utilisation :
+# Pour surveiller l'espace disque utilisé sur le point de montage "/mnt/data" avec un seuil d'avertissement de 80% et un seuil critique de 90% :
+# 1. Utilisez "/mnt/data" comme $ARG1$
+# 2. Utilisez "80" comme $ARG2$
+# 3. Utilisez "90" comme $ARG3$
+
+# Assurez-vous que le script check_disk_space.sh est correctement placé et exécutable sur l'hôte Nagios.
+
