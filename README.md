@@ -26,7 +26,7 @@ Le programme a été conçu avec le language Bash
 
 ## Running the tests
 
-Le programme a été testé sur l'OS Debian 64bits.
+Le programme a été testé sur l'OS Debian 64bits
 
 ## Versioning
 
