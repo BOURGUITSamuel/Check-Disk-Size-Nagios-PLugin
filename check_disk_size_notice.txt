@@ -71,5 +71,5 @@ define service {
 # 2. Utilisez "80" comme $ARG2$
 # 3. Utilisez "90" comme $ARG3$
 
-# Assurez-vous que le script check_disk_space.sh est correctement placé et exécutable sur l'hôte Nagios.
+# Assurez-vous que le script check_disk_size.bash est correctement placé et exécutable sur l'hôte Nagios.
 
