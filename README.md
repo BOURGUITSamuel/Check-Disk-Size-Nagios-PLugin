@@ -8,7 +8,7 @@ PLugin nagios permettant de vérifier l'espace disque d'un système d'exploitati
 
 ## Getting Started
 
-Vous pouvez utiliser ce programme afin de superviser l'espace disque de vos serveurs via l'outil de supervsion Nagios
+Vous pouvez utiliser ce programme afin de superviser l'espace disque de vos serveurs via l'outil de supervision Nagios
 
 ### Prerequisites
 
