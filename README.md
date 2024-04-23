@@ -1,20 +1,20 @@
 # Check-Disk-Size-Nagios-PLugin
 
-Nagios plugin to check Linux Disk Size
+Nagios plugin to check Linux Disk Size.
 
 # check_disk_size.bash
 
-PLugin nagios permettant de vérifier l'espace disque d'un système d'exploitation Linux
+PLugin nagios permettant de vérifier l'espace disque d'un système d'exploitation Linux.
 
 ## Getting Started
 
-Vous pouvez utiliser ce programme afin de superviser l'espace disque de vos serveurs via l'outil de supervision Nagios
+Vous pouvez utiliser ce programme afin de superviser l'espace disque de vos serveurs via l'outil de supervision Nagios.
 
 ### Prerequisites
 
 L'utilisation du programme nécessite l'acquisition d'un système d'exploitation Linux : Debian / CentOS / Ubuntu...
 
-Le programme a été conçu avec le language Bash
+Le programme a été conçu avec le language Bash.
 
 ## Installing & Using
 
@@ -26,7 +26,7 @@ Le programme a été conçu avec le language Bash
 
 ## Running the tests
 
-Le programme a été testé sur l'OS Debian 64bits
+Le programme a été testé sur l'OS Debian 64bits.
 
 ## Versioning
 
