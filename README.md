@@ -30,7 +30,7 @@ Le programme a été testé sur l'OS Debian 64bits.
 
 ## Versioning
 
-Version 5.0
+Version 6.0
 
 ## Authors
 
