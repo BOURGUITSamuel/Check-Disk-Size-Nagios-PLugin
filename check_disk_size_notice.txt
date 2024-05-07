@@ -20,7 +20,7 @@ Exemple d'utilisation :
 
 Fonctionnalités :
 - Affiche l'aide sur la manière d'utiliser le script si le nombre d'arguments
-  est incorrect.
+  est incorrect ou bien en utlisant l'option -h / -help.
 - Vérifie si le point de montage spécifié existe.
 - Surveille l'espace disque utilisé sur le point de montage.
 - Compare l'espace disque utilisé aux seuils spécifiés.
